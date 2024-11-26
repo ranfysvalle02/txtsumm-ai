@@ -333,7 +333,7 @@ Embrace the power of automated summarization, but remember to complement it with
 
 ---
 
-# Appendix-A: A Simple Summary Processing Chain
+# Appendix-A: A Simple Processing Chain
 
 A **processing chain** is like a special assembly line where different helper toys work together to solve a problem.
 
