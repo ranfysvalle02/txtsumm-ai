@@ -2,8 +2,6 @@
 
 ---
 
-# Crafting an Open-Source Text Summarizer with LangChain and Critical Vectors
-
 In today’s digital landscape, where information is abundant and attention spans are short, the ability to distill lengthy texts into concise summaries is more valuable than ever. Whether you're a researcher sifting through academic papers, a professional managing extensive reports, or simply someone who wants to stay informed without getting bogged down by details, an efficient text summarizer can be a game-changer. Let’s explore how you can build a robust, open-source text summarizer using **LangChain**, **Critical Vectors**, and Python's multiprocessing capabilities.
 
 ### Versatile Summarization Strategies
