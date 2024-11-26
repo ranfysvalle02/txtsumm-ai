@@ -4,7 +4,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_openai import AzureChatOpenAI
 from langchain_text_splitters import CharacterTextSplitter
 
-class TextSummarizer:
+class TextSummAI:
     def __init__(self, llm=None):
         if llm is None:
             # requires LLM, throw exception
@@ -37,13 +37,13 @@ class TextSummarizer:
 os.environ["AZURE_OPENAI_API_KEY"] = ""
 os.environ["AZURE_OPENAI_ENDPOINT"] = ""
 my_llm = AzureChatOpenAI(
-    openai_api_version="2024-10-01",
+    openai_api_version="2023-03-15-preview",
     azure_deployment="gpt-4o-mini",
     temperature=0.0,
     max_tokens=150
 )
 # Example usage
-summarizer = TextSummarizer(llm=my_llm)
+summarizer = TextSummAI(llm=my_llm)
 long_text = "hello world"
 summary = summarizer.summarize_text(long_text)
 print("Final Summary:")
