@@ -2,37 +2,6 @@
 
 ---
 
-# A Simple Summary Processing Chain
-
-A **processing chain** is like a special assembly line where different helper toys work together to solve a problem.
-
-## What is a Processing Chain?
-
-A processing chain is a way to break down a big, complicated task into smaller, easier steps. Think of it like making a sandwich:
-- First, you get the bread (input)
-- Then you add butter (first step)
-- Next, you put cheese (second step)
-- Finally, you add some yummy toppings (final output)
-
-## How Does a Processing Chain Work?
-
-In LangChain, a processing chain connects different **magical helpers**:
-- **Prompt Template**: Tells the computer what to do
-- **Language Model**: The brain that thinks and creates answers
-- **Output Parser**: Helps make the answer neat and tidy
-
-## Simple Example
-
-```python
-# Imagine telling the computer: "Help me name a company that makes sheets!"
-chain = prompt | llm | output_parser
-result = chain.invoke({"product": "Queen Size Sheet Set"})
-```
-
-The chain takes your input, thinks about a cool company name, and gives you an answer - just like magic! 🪄
-
-Each **link** in the chain does a small job, and together they solve big problems easily and smoothly.
-
 # Crafting an Open-Source Text Summarizer with LangChain and Critical Vectors
 
 In today’s digital landscape, where information is abundant and attention spans are short, the ability to distill lengthy texts into concise summaries is more valuable than ever. Whether you're a researcher sifting through academic papers, a professional managing extensive reports, or simply someone who wants to stay informed without getting bogged down by details, an efficient text summarizer can be a game-changer. Let’s explore how you can build a robust, open-source text summarizer using **LangChain**, **Critical Vectors**, and Python's multiprocessing capabilities.
@@ -363,3 +332,36 @@ As you leverage `TextSummAI` for your summarization needs, consider the followin
 By thoughtfully integrating `TextSummAI` into your workflow and being mindful of the potential for information loss, you can harness its capabilities to enhance your information processing without compromising on the quality and integrity of the content you rely on.
 
 Embrace the power of automated summarization, but remember to complement it with your judgment and expertise. This balanced approach ensures that while you benefit from efficiency and scalability, the depth and richness of your information remain intact.
+
+---
+
+# Appendix-A: A Simple Summary Processing Chain
+
+A **processing chain** is like a special assembly line where different helper toys work together to solve a problem.
+
+## What is a Processing Chain?
+
+A processing chain is a way to break down a big, complicated task into smaller, easier steps. Think of it like making a sandwich:
+- First, you get the bread (input)
+- Then you add butter (first step)
+- Next, you put cheese (second step)
+- Finally, you add some yummy toppings (final output)
+
+## How Does a Processing Chain Work?
+
+In LangChain, a processing chain connects different **magical helpers**:
+- **Prompt Template**: Tells the computer what to do
+- **Language Model**: The brain that thinks and creates answers
+- **Output Parser**: Helps make the answer neat and tidy
+
+## Simple Example
+
+```python
+# Imagine telling the computer: "Help me name a company that makes sheets!"
+chain = prompt | llm | output_parser
+result = chain.invoke({"product": "Queen Size Sheet Set"})
+```
+
+The chain takes your input, thinks about a cool company name, and gives you an answer - just like magic! 🪄
+
+Each **link** in the chain does a small job, and together they solve big problems easily and smoothly.
