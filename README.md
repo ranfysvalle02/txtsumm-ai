@@ -69,62 +69,6 @@ class TextSummAI:
 
 One of the standout features of this setup is its open nature. By leveraging open-source libraries like LangChain and Critical Vectors, you’re not tied to any specific vendor. This ensures that your summarizer remains flexible, customizable, and free from vendor lock-in, allowing you to switch out components or integrate new ones as your needs evolve.
 
-# Building `TextSummAI`: A Powerful Open-Source Text Summarizer with LangChain and Critical Vectors
-
-In today’s fast-paced digital world, the sheer volume of information can be overwhelming. Whether you're a researcher navigating through academic papers, a professional managing extensive reports, or someone who simply wants to stay informed without getting bogged down by details, having an efficient text summarizer is invaluable. Enter **`TextSummAI`**—a robust, open-source text summarizer built using **LangChain**, **Critical Vectors**, and Python's multiprocessing capabilities. In this blog post, we'll explore the architecture behind `TextSummAI`, delve into its versatile summarization strategies, and provide a comprehensive guide to building it yourself.
-
----
-
-## Table of Contents
-
-1. [Understanding Processing Chains](#understanding-processing-chains)
-2. [Introducing TextSummAI](#introducing-textsummai)
-3. [Versatile Summarization Strategies](#versatile-summarization-strategies)
-4. [Deep Dive into the Code](#deep-dive-into-the-code)
-5. [Conclusion](#conclusion)
-
----
-
-## Understanding Processing Chains
-
-Before we dive into `TextSummAI`, it's essential to understand the concept of a **processing chain**. Think of it as a specialized assembly line where different components work together seamlessly to accomplish a complex task. Breaking down a big problem into smaller, manageable steps not only simplifies the process but also enhances efficiency and scalability.
-
-### What is a Processing Chain?
-
-A processing chain decomposes a large, complicated task into smaller, easier steps. Imagine making a sandwich:
-
-1. **Input**: Gather the bread.
-2. **First Step**: Add butter.
-3. **Second Step**: Place cheese.
-4. **Final Output**: Add delicious toppings.
-
-Each step handles a specific part of the task, ensuring the final product is perfect.
-
-### How Does a Processing Chain Work in LangChain?
-
-In the context of **LangChain**, a processing chain connects different **magical helpers** to perform tasks efficiently:
-
-- **Prompt Template**: Instructs the computer on what to do.
-- **Language Model (LLM)**: The brain that processes information and generates responses.
-- **Output Parser**: Formats the output to ensure it's neat and usable.
-
-Here's a simple example to illustrate:
-
-```python
-# Imagine telling the computer: "Help me name a company that makes sheets!"
-chain = prompt | llm | output_parser
-result = chain.invoke({"product": "Queen Size Sheet Set"})
-```
-
-In this chain:
-- The **prompt** instructs the LLM to generate a company name.
-- The **LLM** processes the request and creates an answer.
-- The **output parser** formats the response neatly.
-
-Each **link** in the chain performs a small job, collectively solving big problems smoothly and efficiently.
-
----
-
 ## Introducing TextSummAI
 
 `TextSummAI` is an open-source text summarizer designed to handle lengthy texts and distill them into concise summaries. Leveraging the power of **LangChain**, **Critical Vectors**, and Python's multiprocessing, `TextSummAI` offers flexibility, scalability, and efficiency.
