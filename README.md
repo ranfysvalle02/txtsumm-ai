@@ -93,19 +93,6 @@ class TextSummAI:
 
 ---
 
-### Global Configuration for Azure OpenAI
-
-```python
-# Global configuration for Azure OpenAI
-AZURE_API_VERSION = ""
-AZURE_DEPLOYMENT = "gpt-4o-mini"
-# Set environment variables (ensure these are set appropriately)
-os.environ["AZURE_OPENAI_API_KEY"] = ""
-os.environ["AZURE_OPENAI_ENDPOINT"] = ""
-```
-
-Ensure you set the appropriate environment variables with your Azure OpenAI credentials.
-
 ### Initializing Critical Vectors
 
 ```python
