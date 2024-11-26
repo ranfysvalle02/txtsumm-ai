@@ -57,6 +57,8 @@ One of the standout features of `TextSummAI` is its ability to employ multiple s
 
 ### Summarization Strategies Offered by TextSummAI
 
+![](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F578a46bd-d59c-4e21-9c05-fadb4ddfd6d7_1015x421.jpeg)
+
 1. **Map-Reduce**:
    - **Process**: Splits the text into manageable chunks, summarizes each chunk (optionally in parallel), and combines the results.
    - **Use Case**: Ideal for very long texts where parallel processing can significantly speed up summarization.
